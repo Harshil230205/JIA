@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Deekay | Add Landloard</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link type="text/css" href="css/materialdesignicons.min.css" rel="stylesheet" />
+<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
+<link type="text/css" href="css/font-awesome.min.css" rel="stylesheet" />
+<link type="text/css" href="css/admin-style.css" rel="stylesheet" />
+<link type="text/css" href="css/admin-responsive.css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="js/modernizr.js"></script>
+<script src="js/jquery-min.js"></script>
+</head>
+<body class="noJS">
+<noscript class="jsRequired">
+This page uses Javascript. Your browser either doesn't support Javascript
+      or you have it turned off. To see this page as it is meant to appear
+      please use a Javascript enabled browser.
+</noscript>
+<!--Wrapper-->
+<div id="wrapper">
+  <!--mainContainer-->
+  <section id="mainContainer">
+    <div class="navBtn"><a href="#" id="menu-toggle" class="navbar-toggle"><i class="mdi mdi-menu"></i></a></div>
+    <!--leftSidebarNav-->
+    <aside id="sidebar" class="navbar-default navbar-static-side">
+      <div class="sidebar-collapse menu-scroll">
+        <ul id="side-menu" class="nav">
+          <li>
+            <!--logoSection-->
+            <div class="logoSection"> <a href="dashboard.htm" title="JIA Group"
+            ><img src="images/logo.png" width="191" height="57" alt="JIA Group" /></a> </div>
+            <!--logoSection-->
+          </li>
+          <li><a href="admin-dashboard.html"><i class="fa fa-fw"><img src="images/dashboard-icons.svg" alt="dashboard"/></i><span class="menu-title">Dashboard</span></a></li>
+          <li><a href="add-landlord.html"><i class="fa fa-fw"><img src="images/landlord-icons.svg" alt="landlord"/></i><span class="menu-title">Landlord</span></a></li>
+          <li><a href="#"><span class="fa arrow"></span><i class="fa fa-fw"><img src="images/property-icons.svg" alt="property"/></i><span class="menu-title">Property</span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="#"> <i class="fa fa-angle-double-right"></i><span class="submenu-title">Lorem</span></a></li>
+              <li><a href="#"> <i class="fa fa-angle-double-right"></i><span class="submenu-title">Lorem</span></a></li>
+              <li><a href="#"> <i class="fa fa-angle-double-right"></i><span class="submenu-title">Lorem</span></a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span class="fa arrow"></span><i class="fa  fa-fw"><img src="images/tenant-icons.svg" alt="tenant"/></i><span class="menu-title">1st</span></a>
+            <ul class="nav nav-second-level">
+              <li><a href="#"><span class="fa arrow"></span><i class="fa  fa-fw"><img src="images/tenant-icons.svg" alt="tenant"/></i><span class="menu-title">2nd</span></a>
+              		<ul class="nav nav-third-level">
+                    	<li><a href="#"> <i class="fa fa-angle-double-right"></i><span class="submenu-title">2nd child</span></a></li>
+                    </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fa  fa-fw"><img src="images/trustees-icons.svg" alt="trustees"/></i><span class="menu-title">Trustees</span></a></li>
+          <li><a href="list-JIA.html"><i class="fa  fa-fw"><img src="images/tasks-icons.svg" alt="tasks"/></i><span class="menu-title">Tasks</span></a></li>
+          <li><a href="#"><i class="fa  fa-fw"><img src="images/rent-schedule-icons.svg" alt="rent schedule"/></i><span class="menu-title">Rent Schedule</span></a></li>
+          <li><a href="#"><i class="fa  fa-fw"><img src="images/transaction-expense-icons.svg" alt="transaction expense"/></i><span class="menu-title">Transaction Expense</span></a></li>
+          <li><a href="multi-step-form.html"><i class="fa  fa-fw"><img src="images/users-icons.svg" alt="users"/></i><span class="menu-title">Users</span></a></li>
+          <li><a href="#"><i class="fa  fa-fw"><img src="images/roles-icons.svg" alt="roles"/></i><span class="menu-title">Roles</span></a></li>
+          <li><a href="#"><i class="fa  fa-fw"><img src="images/master-data-icons.svg" alt="master data"/></i><span class="menu-title">Master Data</span></a></li>
+          <li><a href="#"><i class="fa  fa-fw"><img src="images/reports-icons.svg" alt="reports"/></i><span class="menu-title">Reports</span></a></li>
+        </ul>
+      </div>
+    </aside>
+    <!--leftSidebarNav-->
+    <!--contentContainer-->
+    <div class="contentContainer">
+      <!--header-->
+      <header id="header">
+        <!--topLinksAndSearch-->
+        <div class="topLinksAndSearch cf">
+          <!--userTopLinks-->
+          <div class="userTopLinks">
+            <ul>
+              <li>
+                <div class="search">
+                  <input type="text" placeholder="Enter Keyword" />
+                  <button type="submit"> <span class="fa fa-search"></span> </button>
+                </div>
+              </li>
+              <li>
+                <div class="relative"> <a href="#" class="openDrpPopup"> <span class="fa fa-bell-o" aria-hidden="true"></span> <span class="roundCount red">5</span> </a>
+                  <div class="dropPopup messagePopup">
+                    <ul>
+                      <li> <a href="#"
+                          ><span class="dropPopupTitle"
+                            >Lorem Ipsum is simply dummy.</span
+                          > <span class="dropPopupText"
+                            >Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry.</span
+                          > <span class="dropPopupDate">15-06-2016</span> </a> </li>
+                      <li> <a href="#"
+                          ><span class="dropPopupTitle"
+                            >Lorem Ipsum is simply dummy.</span
+                          > <span class="dropPopupText"
+                            >Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry.</span
+                          > <span class="dropPopupDate">15-06-2016</span> </a> </li>
+                      <li> <a href="#"
+                          ><span class="dropPopupTitle"
+                            >Lorem Ipsum is simply dummy.</span
+                          > <span class="dropPopupText"
+                            >Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry.</span
+                          > <span class="dropPopupDate">15-06-2016</span> </a> </li>
+                      <li> <a href="#"
+                          ><span class="dropPopupTitle"
+                            >Lorem Ipsum is simply dummy.</span
+                          > <span class="dropPopupText"
+                            >Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry.</span
+                          > <span class="messageDate">15-06-2016</span> </a> </li>
+                    </ul>
+                    <a href="#" class="viewAll">View All Messages</a> </div>
+                </div>
+              </li>
+              <li> <a href="#" class=""
+                  ><i class="fa fa-cog" aria-hidden="true"></i
+                ></a> </li>
+            </ul>
+          </div>
+          <!--userTopLinks-->
+          <!--userInformation-->
+          <div class="userInformation">
+            <!--userImg-->
+            <div class="userImgWrap">
+              <div class="userImg"> <img src="images/user-icon.png" width="51" height="51" alt="Admin" title="admin" /> </div>
+            </div>
+            <!--userImg-->
+            <!--userDetail-->
+            <div class="userDetail"> <a href="#" class="openDrpPopup">
+              <div class="user">
+                <h4> Rishi Haria <i class="fa-solid fa-chevron-down"></i> </h4>
+                <p>Admin</p>
+              </div>
+              </a>
+              <div class="dropPopup messagePopup">
+                <ul>
+                  <li> <a href="#"
+                      ><i class="fa fa-user" aria-hidden="true"></i> Account</a
+                    > </li>
+                  <li> <a href="login.html"
+                      ><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a
+                    > </li>
+                </ul>
+              </div>
+            </div>
+            <!--userDetail-->
+          </div>
+          <!--userInformation-->
+        </div>
+        <!--topLinksAndSearch-->
+      </header>
+      <!--header-->
+      <div class="adminInnerContent">
+        <div class="list-inner">
+          <div class="tast-list">
+            <h2>Add New Landlord</h2>
+          </div>
+        </div>
+        <div class="custom-tab">
+          <ul class="nav nav-tabs d-none d-lg-flex" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="landlord" data-bs-toggle="tab" data-bs-target="#landlord-details" type="button" role="tab" aria-controls="landlord" aria-selected="true">Landlord Details</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bank-details" type="button" role="tab" aria-controls="bank-details" aria-selected="false">Bank Details</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="payees-address-tab" data-bs-toggle="tab" data-bs-target="#payees-address" type="button" role="tab" aria-controls="payees-address" aria-selected="false">Payees Address</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false">Documents</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="note-tab" data-bs-toggle="tab" data-bs-target="#note" type="button" role="tab" aria-controls="note" aria-selected="false">Note</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="map-tab" data-bs-toggle="tab" data-bs-target="#map" type="button" role="tab" aria-controls="map" aria-selected="false">Map</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="call-log-tab" data-bs-toggle="tab" data-bs-target="#call-log" type="button" role="tab" aria-controls="call-log" aria-selected="false">Call log</button>
+            </li>
+          </ul>
+          <div class="tab-content accordion" id="myTabContent">
+            <!-- Landlord Details -->
+            <div class="tab-pane fade show active accordion-item" id="landlord-details" role="tabpanel" aria-labelledby="landlord-details" tabindex="0">
+              <h2 class="accordion-header d-lg-none" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Landlord Details</button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show  d-lg-block" aria-labelledby="headingOne" data-bs-parent="#myTabContent">
+                <div class="accordion-body">
+                  <form>
+                    <div class="row my-0">
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="reference">Reference</label>
+                          <input type="text" value="" id="reference" class="input">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-0">
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="first-name">First Name</label>
+                          <input type="text" value="" id="first-name" class="input">
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="middle-name">Middle Name</label>
+                          <input type="text" value="" id="middle-name" class="input">
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="last-name">Last Name</label>
+                          <input type="text" value="" id="last-name" class="input">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-0">
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="Company">Company</label>
+                              <select name="selectcorporation" id="Company" class="">
+                                <option>Company</option>
+                                <option>Company 1</option>
+                              </select>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="company-checkbox">
+                          <div class="remember">
+                            <div class="remecheckbox">
+                              <input type="checkbox" class="input">
+                              Archived </div>
+                          </div>
+                          <div class="remember">
+                            <div class="remecheckbox">
+                              <input type="checkbox" class="input">
+                              UK Resident </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-0">
+                      <div class="address-contact">
+                        <div class="table-title">
+                          <h3 class="headingh3">Address And Contact Details</h3>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="Address">Address</label>
+                          <input type="text" value="" id="Address" class="input">
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="Town">Town/City</label>
+                          <input type="text" value="" id="Town" class="input">
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="Country">Country</label>
+                          <input type="text" value="" id="Country" class="input">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-0">
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="Postcode">Postcode</label>
+                          <input type="text" value="" id="Postcode" class="input">
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="Email">Email</label>
+                          <input type="text" value="" id="Email" class="input">
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="Stmt-Email">Stmt. Email</label>
+                          <input type="text" value="" id="Stmt-Email" class="input">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-0">
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="Office-Phone">Office Phone</label>
+                          <input type="text" value="" id="Office-Phone" class="input">
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="Mobile-No">Mobile No.</label>
+                          <input type="text" value="" id="Mobile-No" class="input">
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="Other-Phone">Other Phone</label>
+                          <input type="text" value="" id="Other-Phone" class="input">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-0">
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="Fax-1">Fax 1</label>
+                          <input type="text" value="" id="Fax-1" class="input">
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="Fax-2">Fax 2</label>
+                          <input type="text" value="" id="Fax-2" class="input">
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="Fax-3">Fax 3</label>
+                          <input type="text" value="" id="Fax-3" class="input">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-0">
+                      <div class="col-md-4 mb-3">
+                        <div class="properties">
+                          <ul>
+                            <li><strong>Properties</strong></li>
+                            <li>Current : 0</li>
+                            <li>Archived : 0</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="properties">
+                          <ul>
+                            <li><strong>Properties</strong></li>
+                            <li>Current : 0</li>
+                            <li>Archived : 0</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-0">
+                      <div class="address-contact">
+                        <div class="table-title">
+                          <h3 class="headingh3">Other Details</h3>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="TypeClient">Type</label>
+                              <select name="selectcorporation" id="TypeClient" class="">
+                                <option>Clients</option>
+                                <option>Company 1</option>
+                              </select>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="custom-readio">
+                          <label for="landlordtype1">Landlord Type</label>
+                          <div class="company-checkbox">
+                            <div class="remember">
+                              <div class="remecheckbox">
+                                <input type="radio" id="landlordtype1" name="landlord-type" checked>
+                                <label for="landlordtype1">Management</label>
+                              </div>
+                            </div>
+                            <div class="remember">
+                              <div class="remecheckbox">
+                                <input type="radio" id="landlordtype2" name="landlord-type">
+                                <label for="landlordtype2">Non Management</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="Status">Status</label>                          
+                              <select name="selectcorporation" id="Status" class="">
+                                <option>Select</option>
+                                <option>Company 1</option>
+                              </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-0">
+                      <div class="col-md-4  mb-3">
+                        <div class="otherdetails">
+                          <label for="Introduced-Date">Introduced Date</label>
+                          <div class="tast-date">
+                            <div class="datefrom">
+                              <div class="from-celender">
+                                <input placeholder="DD/MM/YY" type="text" id="Introduced-Date" class="datepicker">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4  mb-3">
+                        <div class="otherdetails">
+                          <label for="Terminated-Date">Terminated Date</label>
+                          <div class="tast-date">
+                            <div class="datefrom">
+                              <div class="from-celender">
+                                <input placeholder="DD/MM/YY" type="text" class="datepicker" id="Terminated-Date">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4  mb-3">
+                        <div class="reference">
+                          <label for="Frequency">Frequency</label>
+                          
+                              <select name="selectcorporation" class="" id="Frequency">
+                                <option>Clients</option>
+                                <option>Company 1</option>
+                              </select>
+                            
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-0">
+                      <div class="col-md-4  mb-3">
+                        <div class="otherdetails">
+                          <label for="Next-Stmt-No">Next Stmt. No.</label>
+                          <input type="text" value="" class="input" id="Next-Stmt-No">
+                        </div>
+                      </div>
+                      <div class="col-md-4  mb-3">
+                        <div class="otherdetails">
+                          <label for="Next-Stmt-Date">Next Stmt. Date</label>
+                          <div class="tast-date">
+                            <div class="datefrom">
+                              <div class="from-celender">
+                                <input placeholder="DD/MM/YY" type="text" class="datepicker" id="Next-Stmt-Date">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4  mb-3">
+                        <div class="reference">
+                          <label for="Expend-Comm">Expend Comm.</label>
+                          <input type="number" value="" id="Expend-Comm" class="input" placeholder="0.00 %">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-0">
+                      <div class="col-md-4  mb-3">
+                        <div class="reference">
+                          <label for="Rent-Comm">Rent Comm.</label>
+                          <input type="number" value="" id="Rent-Comm" class="input" placeholder="0.00 %">
+                        </div>
+                      </div>
+                      <div class="col-md-4  mb-3">
+                        <div class="otherdetails">
+                          <label for="VAT-Reg-No">VAT Reg. No.</label>
+                          <input type="text" value="" id="VAT-Reg-No" class="input">
+                        </div>
+                      </div>
+                      <div class="col-md-4  mb-3">
+                        <div class="otherdetails">
+                          <label for="UTR">UTR</label>
+                          <input type="text" value="" id="UTR" class="input">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-0">
+                      <div class="col-md-4 mb-3">
+                        <div class="reference">
+                          <label for="VAT-Quarter-End">VAT Quarter End</label>                          
+                              <select name="selectcorporation" class="" id="VAT-Quarter-End">
+                                <option>Clients</option>
+                                <option>Company 1</option>
+                              </select>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="custom-readio">
+                          <label for="paymentmode1">Payment Mode</label>
+                          <div class="company-checkbox">
+                            <div class="remember">
+                              <div class="remecheckbox">
+                                <input type="radio" id="paymentmode1" name="pay-mode" checked>
+                                <label for="paymentmode1">Basic</label>
+                              </div>
+                            </div>
+                            <div class="remember">
+                              <div class="remecheckbox">
+                                <input type="radio" id="paymentmode2" name="pay-mode">
+                                <label for="paymentmode2">Cheque</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="custom-readio">
+                          <label for="accountingmode1">Accounting Mode</label>
+                          <div class="company-checkbox">
+                            <div class="remember">
+                              <div class="remecheckbox">
+                                <input type="radio" id="accountingmode1" name="account-mode" checked>
+                                <label for="accountingmode1">Actual</label>
+                              </div>
+                            </div>
+                            <div class="remember">
+                              <div class="remecheckbox">
+                                <input type="radio" id="accountingmode2" name="account-mode">
+                                <label for="accountingmode2">Adjust</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-0">
+                      <div class="col-md-4 mb-3">
+                        <div class="custom-readio">
+                          <label for="calc-int-none">Calculate Interest on Balance</label>
+                          <div class="readiobox">
+                            <div class="company-checkbox">
+                              <div class="remember">
+                                <div class="remecheckbox">
+                                  <input type="radio" id="calc-int-none" name="calc-interest" checked>
+                                  <label for="calc-int-none">None</label>
+                                </div>
+                              </div>
+                              <div class="remember">
+                                <div class="remecheckbox">
+                                  <input type="radio" id="fixed" name="calc-interest">
+                                  <label for="fixed">Fixed</label>
+                                </div>
+                              </div>
+                              <div class="remember">
+                                <div class="remecheckbox">
+                                  <input type="radio" id="variable" name="calc-interest">
+                                  <label for="variable">Variable</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="custom-readio">
+                          <label for="pay-Int-none">Pay Interest on Retention</label>
+                          <div class="readiobox">
+                            <div class="company-checkbox">
+                              <div class="remember">
+                                <div class="remecheckbox">
+                                  <input type="radio" id="pay-Int-none" name="pay-interest" checked>
+                                  <label for="pay-Int-none">None</label>
+                                </div>
+                              </div>
+                              <div class="remember">
+                                <div class="remecheckbox">
+                                  <input type="radio" id="fixed1" name="pay-interest">
+                                  <label for="fixed1">Fixed</label>
+                                </div>
+                              </div>
+                              <div class="remember">
+                                <div class="remecheckbox">
+                                  <input type="radio" id="variable1" name="pay-interest">
+                                  <label for="variable1">Variable</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="savenext-btn">
+                        <button class="reset-btn">Reset</button>
+                        <button class="save-btn active">Save & Next</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- Bank Details -->
+            <div class="tab-pane fade accordion-item" id="bank-details" role="tabpanel" aria-labelledby="bank-details" tabindex="0">
+              <h2 class="accordion-header d-lg-none" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Bank Details </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingTwo" data-bs-parent="#myTabContent">
+                <div class="accordion-body"> Bank Details </div>
+              </div>
+            </div>
+            <!-- Contact -->
+            <div class="tab-pane fade accordion-item" id="contact" role="tabpanel" aria-labelledby="contact" tabindex="0">
+              <h2 class="accordion-header d-lg-none" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Contact </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingThree" data-bs-parent="#myTabContent">
+                <div class="accordion-body"> Contact </div>
+              </div>
+            </div>
+            <!-- Payees Address -->
+            <div class="tab-pane fade accordion-item" id="payees-address" role="tabpanel" aria-labelledby="payees-address" tabindex="0">
+              <h2 class="accordion-header d-lg-none" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> Payees Address </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingFour" data-bs-parent="#myTabContent">
+                <div class="accordion-body"> Payees Address </div>
+              </div>
+            </div>
+            <!-- Documents -->
+            <div class="tab-pane fade accordion-item" id="documents" role="tabpanel" aria-labelledby="documents" tabindex="0">
+              <h2 class="accordion-header d-lg-none" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> Documents </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingFive" data-bs-parent="#myTabContent">
+                <div class="accordion-body"> Documents </div>
+              </div>
+            </div>
+            <!-- Note -->
+            <div class="tab-pane fade accordion-item" id="note" role="tabpanel" aria-labelledby="note" tabindex="0">
+              <h2 class="accordion-header d-lg-none" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"> Note </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingSix" data-bs-parent="#myTabContent">
+                <div class="accordion-body"> Note </div>
+              </div>
+            </div>
+            <!-- Map -->
+            <div class="tab-pane fade accordion-item" id="map" role="tabpanel" aria-labelledby="map" tabindex="0">
+              <h2 class="accordion-header d-lg-none" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"> Map </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingSeven" data-bs-parent="#myTabContent">
+                <div class="accordion-body"> Map </div>
+              </div>
+            </div>
+            <!-- Call log -->
+            <div class="tab-pane fade accordion-item" id="call-log" role="tabpanel" aria-labelledby="call-log" tabindex="0">
+              <h2 class="accordion-header d-lg-none" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"> Call log </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingEight" data-bs-parent="#myTabContent">
+                <div class="accordion-body"> Call log </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--footer-->
+      <footer id="footer" class="footer">
+        <p>Copyright &copy; 2023, Rural Development Department, Govt. of Maharashtra</p>
+      </footer>
+      <!--footer-->
+    </div>
+    <!--contentContainer-->
+  </section>
+  <!--mainContainer-->
+</div>
+<!--Wrapper-->
+<!--<a href="#wrapper" title="Back to Top" id="backtotop"><i class="mdi mdi-arrow-up-bold"></i></a>-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/admin-general.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+/* ************* Media Queries Tablets ****************** */
+
+@media only screen and (max-width:1279px) {
+	.columnBoxWrap.topCoutner  .columnBox4 { width: 50%; }
+	.countContent p { max-width: none; }
+	.chartArea .columnBox9 { width: 66.66%; }
+	.chartArea .columnBox4 { width: 33.33%; }
+	.rightTopFeilds.adminForm li .feildCol { margin-bottom: 0; }
+	h2.boxTitle.feildPadding { padding-right: 255px; margin-bottom: 15px; }
+	.chartArea .commonBox { height: 440px; }
+	.bg-aqua-gradient, .bg-aqua-gradient-light, .bg-aqua-gradient-orange, .bg-aqua-gradient-green, .bg-aqua-gradient-blue { width: 30%; }
+}
+@media only screen and (max-width:1199px) {
+	h2, .heading2 { font-size: 30px; }
+	.serchPanelFeild { padding-right: 0; }
+	.adminForm .sixColFeild li .feildCol { width: 33.33%; margin-bottom: 10px; }
+	.adminForm .fifthColFeild li .feildCol { width: 33.33%; margin-bottom: 10px; }
+	.searchBtnCol { top: 0; position: relative; left: 0; }
+	.rightTopFeilds { position: relative; right: 0; top: 0px; width: 100%; }
+	h2.boxTitle.feildPadding { padding-right: 0; }
+	.searchFiled { width: 300px; }
+	.loginForm { float: none; margin: 0 auto; }
+	.loginFooter { text-align: center; background-color: rgba(255, 255, 255, 0.5); padding: 20px 0; }
+	.loginFooter p { margin: 0; }
+	.formBtn { font-size: 16px; }
+	.userTopLinks li:nth-child(2), .userTopLinks li:nth-child(3), .userTopLinks li:nth-child(4) { display: none; }
+
+.logo a { text-align: center; margin: 0 auto; }
+.logo img { max-width: 230px; }
+.loginForm{ padding: 50px 40px; }
+
+
+}
+
+@media only screen and (max-width:1023px) {
+	.menuCollepase { width: 70px !important; }
+	.contentContainer { margin-left: 0 !important; }
+	.leftSidebarNav { width: 100%; position: static; padding: 0; margin: 30px 0 0 0; }
+	.menuDisplayNone { margin-left: -70px; visibility: hidden; opacity: 0; }
+	.menuCollepase.menuDisplayNone { margin-left: 0; visibility: visible; opacity: 1; }
+}
+@media only screen and (max-width:991px) {
+	h2, .heading2 { font-size: 24px; }
+	#footer { padding: 10px 0; margin: 50px 0 0 0; position: relative; border-top: 1px solid #ccc; }
+	#header { padding: 10px; }
+	.topLinksAndSearch li:nth-child(1) { display: none; }
+	.logoSection { padding: 0; }
+	.topLinksAndSearch { padding: 0 20px; }
+	.topLinksAndSearch .userTopLinks, .topLinksAndSearch .searchAndMenubar { padding: 15px 0; }
+	.contentContainer { padding: 20px; }
+	.topLinksAndSearch { position: relative; }
+	.topLinksAndSearch .searchAndMenubar li { position: static; }
+	.searchFiled { top: 100%; left: 0; width: 100%; padding: 10px 20px; background: #57bdde; }
+	.searchFiled input[type="submit"] { right: 21px; top: 11px; }
+	.searchFiled:before { content: ""; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 15px solid #57bdde; position: absolute; z-index: 111; left: 67px; top: -15px; width: 0; height: 0; }
+	.topLinksAndSearch li { margin-right: 18px; }
+
+
+
+}
+
+@media only screen and (max-width:800px) {
+
+	/*Responsive Table*/
+	.responsiveTable, .responsiveTable tr, .responsiveTable td, .responsiveTable td:before { display: block; text-align: left; border: none;	/* Converts a table, table row, table column and table column:before into a block element */ }
+	.responsiveTable, .responsiveTable tr, .responsiveTable td:last-child { border-bottom: none; }
+	.responsiveTable thead, .responsiveTable tr th { position: absolute;	/* Hides table head but not using display none */ top: -1000em; left: -1000em; }
+	.responsiveTable tr { border: 1px solid #eeeeee; border-bottom: 2px solid #eeeeee; margin: 0 0 20px; }
+	.responsiveTable tr td:nth-child(1) { /* first column of the row */ border-left: none; }
+	.responsiveTable tr td:last-child { /* last column of the row */ border-right: none; }
+	.responsiveTable tr:last-child .td, .responsiveTable td { /* Column in the last row and column */ border-bottom: 1px solid #eeeeee; }
+	.responsiveTable td:before { /* prints the value of data-label attribute before the column data */ font-weight: bold; padding-right: 20px; line-height: 27px; color: #174471; content: " "attr(data-label)"";	/* call the attribute value of data-label and adds a string // */ }
+	.responsiveTable tbody { display: block; }
+	.responsiveTable tr td { padding: 5px 15px; width: auto !important; }
+
+	/**********************newCss****************/
+	.chartArea .columnBox9 { width: 100%; }
+	.chartArea .columnBox4 { width: 100%; }
+	.columnBox6 { width: 100%; }
+}
+@media only screen and (max-width:768px) {
+	.r-tabs .r-tabs-nav { display: none; }
+	.r-tabs .r-tabs-accordion-title { display: block; }
+}
+/*@media only screen and (max-height:700px) {
+	.loginFooter { position: relative; z-index: 1; }
+}
+*/
+/* ************* Mobiles Media Queries ****************** */
+@media only screen and (max-width:767px) {
+	.pageOption { width: 100%; }
+	.pagenation { width: 100%; text-align: center; justify-content: center; }
+	.showResult { float: none; width: 100%; text-align: center; margin-bottom: 20px; }
+	.heading2 { font-size: 20px; }
+	.formBtn { font-size: 13px; padding: 15px 15px; }
+	.contentContainer { padding: 15px; }
+	.loginPageInfo { padding: 0 20px; }
+	.fontResize { display: none; }
+	.adminForm .sixColFeild li .feildCol { width: 50%; margin-bottom: 10px; }
+	.adminForm .fifthColFeild li .feildCol { width: 50%; margin-bottom: 10px; }
+	.popupStepsView .r-tabs-accordion-title { display: none; }
+	.popupStepsView.r-tabs .r-tabs-nav { display: block; }
+	.tableOut { padding-top: 25px; background: url(../images/swipeIconGray.png) right top no-repeat; margin-bottom: 20px; }
+	.tableOut table { min-width: 768px; margin-bottom: 0; }
+	.formList .boxs > li, .formList .boxs > div { float: none; width: 100%; }
+	.width50p { width: 100%; }
+.logo img{ margin-bottom: 30px; }	
+
+.left-side-collapsed #sidebar{ width:0;}
+.navBtn, .left-side-collapsed .navBtn{ right:10px; top:15px; left:inherit;}
+}
+@media only screen and (max-width:639px) {
+	.formList .boxs { margin-left: 0; }
+	.formList .box { float: none; width: auto; margin-left: 0; }
+	.userInformation { display: flex; justify-content: center; flex-wrap: wrap; }
+	.userInformation p { font-size: 8px; display: none; }
+	.userInformation h4 { font-size: 14px; }
+	.userDetail { display: flex; align-items: center; }
+	.user h4 { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 50px; }
+	.topLinksAndSearch { padding: 0; }
+}
+@media only screen and (max-width:599px) {
+	.columnBoxWrap.topCoutner  .columnBox4 { width: 100%; }
+	.popupStepsView .tabNav li::before { width: 50%; left: -25%; }
+	.adminPopup h3 { clear: both; }
+}
+@media only screen and (max-width:479px) {
+	.topLinksAndSearch .userTopLinks li { position: static; }
+	.dropPopup { margin-right: 0; top: 56px; width: 95%; margin: 0 2.5%; }
+	.dropPopup:before { display: none; }
+	.topLinksAndSearch .userTopLinks .messagePopup li { position: relative; }
+	.logoSection { max-width: 223px; }
+	#header { display: flex; align-items: center; justify-content: space-between; }
+	.remember{ display: block; }
+	.remember a.link1{ margin-top: 15px; display: block; }
+
+}
+@media only screen and (max-width:400px) {
+	.adminForm .sixColFeild li .feildCol { width: 100%; margin-bottom: 10px; }
+	.adminForm .fifthColFeild li .feildCol { width: 100%; margin-bottom: 10px; }
+	.popupStepsView .tabNav li::before { width: 40%; left: -20%; }
+	.legends li { font-size: 12px; }
+
+
+}
+@media only screen and (max-width:359px) {
+	.popupStepsView .tabNav li::before { width: 30%; left: -15%; }
+}
